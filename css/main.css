@@ -1,5 +1,7 @@
 /* Start Global Rules */
 :root {
+    --main-color: #ff3c00;
+    --sec-color: #162f69;
 
 }
 
@@ -20,4 +22,115 @@ body {
     margin-right: auto;
     margin-left: auto;
 }
+
 /* End Global Rules */
+
+/* Start Landidng */
+.landing{
+    background-image: url(../img/ima07.jpg);
+    background-size: cover;
+    background-position: left center;
+    height: calc(100vh - 80px);
+}
+.landinglayer{
+    background-color: #101727ba;
+}
+.home-content h2{
+    margin: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 2.5rem;
+    color: white;
+    border-right: 2px solid rgb(255, 255, 255);
+    animation: typedtext 11s  infinite   ,blinkTextCursor 400ms steps(40) infinite normal;
+    width: 0%;
+    font-weight: 600;
+    color: var(--main-color);
+    font-size: 45px;
+}
+#typed-text::after{
+    
+    content: "";
+    animation: typing 14s  infinite;
+}
+.para{
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.landing .social-icon {
+    bottom: -5rem;
+    box-shadow: -5px 9px 19px -12px #00000073;
+}
+
+.landing .social-icon a {
+    color: var(--sec-color);
+    transition: 0.3;
+}
+
+.landing .social-icon a:hover {
+    color: var(--main-color);
+}
+/* End Landidng */
+
+/* Start Animation */
+@keyframes typedtext{
+    0%{
+        width: 0%;
+    }
+    25%{
+        width: 60%;
+    }
+    50%{
+        width: 0%;
+    }
+    75%{
+        width: 60%;
+    }
+    85%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes typing{
+    0%{
+        content: "AIR DUCT VENTS CLEANING";
+    }
+    25%{
+        content: "AIR DUCT VENTS CLEANING";
+    }
+    40%{
+        content: "AIR DUCT VENTS CLEANING";
+    }
+    55%{
+        content: "AIR DUCT VENTS CLEANING";
+    }
+    80%{
+        content: "AIR DUCT VENTS CLEANING";
+    }
+    100%{
+        content: "AIR DUCT VENTS CLEANING";
+    }
+}
+@keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+}
+/* End Animation */
+
+/* Start Media Query */
+@media (max-width: 768px) {
+    .landing h2 {
+        font-size: 1.2rem;
+    }
+    .landing .para {
+        width: 400px;
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+}
+/* End Media Query */
+
+
