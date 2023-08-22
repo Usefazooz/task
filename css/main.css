@@ -56,6 +56,7 @@ body {
 .para{
     color: #ffffff;
     font-size: 1.2rem;
+    width: 900px;
 }
 
 .landing .social-icon {
@@ -126,9 +127,13 @@ body {
         font-size: 1.2rem;
     }
     .landing .para {
-        width: 400px;
-        padding: 1rem;
+        width: 380px;
+        padding: 1.4rem;
+        line-height: 1.8;
         font-size: 0.8rem;
+    }
+    .landing .social-icon {
+        width: 90%;
     }
 }
 /* End Media Query */
